@@ -78,4 +78,9 @@ public class AggregatorController {
 
         return entries;
     }
+    @GetMapping ("/getAllPalindromes/{word}")
+    public List<Entry> getDefinitionFor() {
+
+        return this.service.getAllPalindromes();
+    }
 }
